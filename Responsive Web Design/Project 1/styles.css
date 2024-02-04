@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+  }
+
+html{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #F9E7E7;
+    
+}
+
+body{
+    
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+   
+}
+
+form{
+    width: 90%;
+    max-width: 470px;
+    padding: 10px;
+    border: 3px solid #704C5E;
+    margin: 0 auto;
+    background-color: #ADA0A6;
+    
+}
+
+
+
+fieldset{
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ffff;
+
+}
+
+
+
+h1, .bynanda{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: #4E0250;
+    
+    
+}
+
+h1{
+    font-family: 'Segoe UI';
+}
+
+.bynanda{
+    padding-bottom: 10px;
+    font-family: cursive;
+    font-size: small;
+    font-style: oblique;
+}
+
+p{
+    margin:auto;
+    width: 470px;
+    text-align: justify;
+    color: #4E0250;
+    margin-bottom: 10px;
+
+}
+
+#name,#email,#number{
+    display: block;
+    width: 100%;
+    margin-top: 5px 0 0 5px;
+    min-height: 1.8em;
+    
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px; /* Adicione margem à direita para espaçamento entre o input e o texto */
+    display: inline-block;
+}
+
+.field3 label{
+    /* display: inline-block; */
+    padding-right: 10px;
+    
+}
+
+.rec{
+    display: block;
+}
+
+
+.field6 label, textarea, button{
+    display: block;
+}
+
+.field6 button{
+    margin: auto;
+}
+
+fieldset:last-child {
+    border: none; /* Remove a borda do último fieldset */
+}
+
+.field2 label{
+    display: block;
+}
+
+input,textarea,select{
+    background-color: #F9E7E7;
+    border: 1px ridge #F9E7E7;
+    
+}
+
+textarea{
+    
+    width: 100%;
+    max-width: 100%;
+}
