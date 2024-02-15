@@ -1,0 +1,116 @@
+html {
+    font-family: Helvetica, sans-serif;
+    display: block
+}
+
+body {
+    font-size: 1.3rem;
+    margin: 0 auto;
+    text-align: justify;
+    max-width: 1000px;
+    padding: 10px;
+    background-color: #011638;
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/23/15/23/cosmos-1853491_1280.jpg);
+
+}
+
+.title-img {
+    display: block;
+
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #EEEEEE;
+    border-radius: 15px;
+    ;
+
+}
+
+header {
+    margin: 0 auto;
+}
+
+h1,
+header p {
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    margin-bottom: 2px;
+}
+
+.work {
+    margin: 0 auto;
+    text-align: center;
+}
+
+figure {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 0.99rem;
+
+}
+
+#image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin:0 auto;
+
+}
+
+#img-caption {
+
+    display: block;
+    margin: 0 auto;
+    color: #333;
+    max-width: 800px;
+    text-align: justify;
+    padding: 10px;
+
+}
+
+#tribute-info {
+    margin-top: 50px;
+    display: block;
+    background-color: #EEEEEE;
+    padding: 15px;
+    border-radius: 15px;
+    min-width: 800px;
+    margin-left: 0;
+    margin-right: 0;
+    color: #333;
+}
+
+span {
+    font-weight: 600;
+}
+
+ul {
+    line-height: 1.6;
+}
+
+li {
+    display: list-item;
+    margin: 16px 0;
+}
+
+#more-info {
+    font-size: 1.2rem;
+    color: #EEEEEE;
+    font-weight: 600px;
+    text-align: center;
+}
+
+a {
+    color: #EEEEEE;
+}
+
+a:hover {
+    color: aquamarine;
+}
