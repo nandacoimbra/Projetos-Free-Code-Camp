@@ -1,8 +1,16 @@
+:root {
+    --space-cadet2: rgb(10, 10, 24);
+    --raisin-black: #1e1e24ff;
+    --penn-red: #92140cff;
+    --floral-white: #fff8f0ff;
+    --sunset: #ffcf99ff;
+    --space-cadet: #111d4aff;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
 
 html {
@@ -18,11 +26,11 @@ html,
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
-.title-input h2{
-    color: #E4FDE1;
+.title-input h2 {
+    color: var(--floral-white);
+
 }
 
 body {
@@ -30,8 +38,7 @@ body {
     height: 60%;
     display: flex;
     flex-direction: column;
-    background-color: #456990;
-
+    background-color: var(--raisin-black);
 }
 
 #check-btn {
@@ -40,25 +47,15 @@ body {
     height: 2rem;
     font-size: 1rem;
     margin: 1rem;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     cursor: pointer;
+    background-color: var(--penn-red);
+    color: #fff;
+    transition: background-color 0.3s ease;
 }
 
-footer{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: .8rem;
-    
-
-}
-
-a{
-    text-decoration: none;
-    color: #F45B69;;
+#check-btn:hover {
+    background-color: rgb(109, 0, 0);
 }
 
 
@@ -70,28 +67,84 @@ h2 {
 label {
     align-self: center;
     width: 70%;
-    color: #E4FDE1;
+    color: var(--floral-white);
 }
 
 input {
     width: 70%;
     height: 3rem;
-    background-color: #114B5F;
-    color: #E4FDE1;
+    background-color: var(--space-cadet2);
+    color: var(--floral-white);
     font-size: 1.1rem;
     border: 1px solid transparent;
-    border-radius: .5rem;
-    padding: .2rem;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
 }
 
-.description, #result {
+input:hover {
+    border: 1px solid var(--space-cadet);
+}
+
+.description,
+#result {
     align-self: center;
     text-align: center;
-    width: 30%;
+    width: 50%;
     height: auto;
-    background-color: #E4FDE1;
+}
+
+.description {
+    color: var(--floral-white);
+}
+
+#result {
+    color: #FFF05A;
+    font-size: 2rem;
 }
 
 .description p {
     text-wrap: wrap;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--sunset);
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--floral-white);
+}
+
+
+@media screen and (max-width: 850px) {
+
+
+    .title-input h2 {
+        text-align: center;
+
+    }
+}
+
+@media screen and (max-width: 390px) {
+
+    html {
+        font-size: .8rem;
+    }
+
+    .title-input h2 {
+        font-size: 2rem;
+
+    }
 }

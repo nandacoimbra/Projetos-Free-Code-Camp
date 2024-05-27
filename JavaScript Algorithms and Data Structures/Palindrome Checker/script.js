@@ -21,5 +21,7 @@ function checkInput() {
         }else{
             document.getElementById("result").innerText = `${input.value} is not a palindrome`;
         }
+
+        input.value="";
     }
 }
