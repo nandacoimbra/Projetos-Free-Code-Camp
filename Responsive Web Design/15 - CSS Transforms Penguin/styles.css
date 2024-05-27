@@ -37,7 +37,7 @@ body{
     position: absolute;
 } 
 
-.penguin:active {
+.penguin:hover {
     transform: scale(1.5);
     cursor: not-allowed;
   }

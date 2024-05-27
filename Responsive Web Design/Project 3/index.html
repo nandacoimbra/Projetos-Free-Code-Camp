@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Technical Documentation Page</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header class="title nav-header"><div>Documentacao</div>
+        </header>
+        
+        <div class="links">
+            <a href="#Linguagem_Python" class="nav-link">Linguagem Python</a>
+            <a href="#Vantagens" class="nav-link">Vantagens</a>
+            <a href="#Conhecimento_necessario" class="nav-link">Conhecimento necessario</a>
+            <a href="#Hello_World" class="nav-link">Hello World</a>
+            <a href="#Estruturas_Condicionais" class="nav-link">Estruturas Condicionais</a>
+            <a href="#Loops" class="nav-link">Loops</a>
+            <a href="#Listas" class="nav-link">Listas</a>
+            <a href="#Dicionarios" class="nav-link">Dicionarios</a>
+            <a href="#NumPy" class="nav-link">NumPy</a>
+            <a href="#Pandas" class="nav-link">Pandas</a>
+            <a href="#Recursos_Adicionais" class="nav-link">Recursos Adicionais</a>
+
+        </div>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Linguagem_Python">
+            <header class="title">Linguagem Python</header>
+          
+            <p>Python é uma linguagem de programação de alto nível, interpretada, de script, imperativa, orientada a
+                objetos, funcional, de tipagem dinâmica e forte. Foi lançada por Guido van Rossum em 1991.</p>
+        </section>
+        <section class="main-section" id="Vantagens">
+            <header class="title">Vantagens</header>
+            <ul>
+                <li><strong>Simplicidade</strong>: Python é conhecido por sua sintaxe simples e legibilidade, o que o
+                    torna uma excelente escolha para iniciantes e programadores experientes.</li>
+                <li><strong>Versatilidade</strong>: Python é usado em uma variedade de domínios, incluindo
+                    desenvolvimento web, análise de dados, inteligência artificial, automação, entre outros.</li>
+                <li><strong>Comunidade Ativa</strong>: Python possui uma vasta comunidade de desenvolvedores que
+                    contribuem com bibliotecas, frameworks e recursos educacionais.</li>
+                <li><strong>Portabilidade</strong>: Python é suportado em várias plataformas, incluindo Windows, macOS e
+                    Linux.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Conhecimento_necessario">
+            <header class="title">Conhecimento necessario</header>
+
+            <p>Para entender este tutorial, é útil ter algum conhecimento básico de programação. Não é necessário ter
+                experiência prévia com Python, mas uma compreensão geral de conceitos de programação será útil.</p>
+
+        </section>
+        <section class="main-section" id="Hello_World">
+            <header class="title">Hello World</header>
+
+            <p>Fazer o "hello world" em Python é simples. Aqui está um exemplo de código:</p>
+
+            <div class="codigo">
+                <code>
+                    print("Hello, world!")
+                    </code>
+            </div>
+
+            <section class="main-section" id="Estruturas_Condicionais">
+                <header class="title">Estruturas Condicionais</header>
+                <p>Exemplo de estrutura condicional em Python:</p>
+
+                <div class="codigo">
+
+                    <pre><code>
+                        if x > 5:
+                        &emsp;print("x é maior do que 5")
+                        else:
+                        &emsp;print("x é menor ou igual a 5")
+                        </code></pre>
+                </div>
+            </section>
+
+            <section class="main-section" id="Loops">
+                <header class="title">Loops</header>
+                <p>Exemplo de loop em Python: </p>
+
+                <div class="codigo">
+
+                    <pre><code>
+                        for i in range(5):
+                        &emsp;print(i)
+                        </code></pre>
+                </div>
+            </section>
+            <section class="main-section" id="Listas">
+                <header class="title">Listas</header>
+                <p>Exemplo de lista em Python: </p>
+
+                <div class="codigo">
+
+                    <pre><code>
+                        frutas = ["maçã", "banana", "laranja"]
+                         print(frutas[0])  # Saída: maçã
+                        </code></pre>
+                </div>
+            </section>
+            <section class="main-section" id="Dicionarios">
+                <header class="title">Dicionarios</header>
+                <p>Exemplo de dicionário em Python: </p>
+
+                <div class="codigo">
+
+                    <pre><code>
+                        pessoa = {"nome": "João", "idade": 30, "cidade": "São Paulo"}
+                        print(pessoa["idade"])  # Saída: 30
+                        </code></pre>
+                </div>
+            </section>
+            <section class="main-section" id="NumPy">
+                <header class="title">NumPy</header>
+                <p>NumPy é uma biblioteca Python usada principalmente para computação numérica. Ela fornece estruturas de dados e funções para trabalhar com matrizes e arrays multidimensionais. </p>
+                <p>Exemplo de uso do NumPy: </p>
+                
+                <div class="codigo">
+                    
+                    <pre><code>
+                        import numpy as np
+                        
+                        arr = np.array([1, 2, 3, 4, 5])
+                        print(arr)  # Saída: [1 2 3 4 5]
+                    </code></pre>
+                </div>
+            </section>
+            
+            <section class="main-section" id="Pandas">
+                <header class="title">Pandas</header>
+                <p>Pandas é uma biblioteca Python usada para manipulação e análise de dados. Ela fornece estruturas de dados e funções para trabalhar com dados tabulares e séries temporais</p>
+                <p>Exemplo de uso do Pandas</p>
+
+                <div class="codigo">
+
+                    <pre><code>
+                        import pandas as pd
+
+                        data = {'Nome': ['Alice', 'Bob', 'Charlie'], 'Idade': [25, 30, 35]}
+                        df = pd.DataFrame(data)
+                        print(df)
+                        </code></pre>
+                </div>
+            </section>
+
+            <section id="Recursos_Adicionais" class="main-section">
+                <header class="title">Recursos Adicionais</header>
+                    <ul>
+                        <li><a href="">Documentação Oficial do Python</a></li>
+                        <li><a href="">Python Tutorial (em inglês)</a></li>
+                        <li><a href="">NumPy Documentation</a></li>
+                        <li><a href="">Pandas Documentation</a></li>
+                    </ul>
+                
+            </section>
+            
+            
+    </main>
+</body>
+
+</html>

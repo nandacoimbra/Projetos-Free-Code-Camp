@@ -1,0 +1,817 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* definicao de cores */
+:root {
+    --main-color: #6565fc;
+    --text-color: #626262;
+    --title-white: white;
+    --title-yellow: #EDED3D;
+    --methodology-button: #6666FF;
+}
+
+html {
+    font-family: 'Open-sans', sans-serif;
+    font-size: 16px;
+
+}
+
+body{
+    min-width: 620px;
+}
+
+body,
+html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+p {
+    color: var(--text-color);
+    text-align: justify;
+    line-height: 2em;
+
+    /* font-weight: 200; */
+}
+
+/* logo e links */
+#header {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    background-color: #FFFFFF;
+    opacity: 95%;
+    z-index: 1;
+
+
+}
+
+/* logo speakup */
+#header-img {
+    width: 250px;
+    height: 52px;
+}
+
+/* home, metodologia, cursos, etc */
+.nav-link {
+    color: var(--main-color);
+    font-weight: bold;
+    /* width: 130px;
+    height: 30px; */
+    background-color: azure;
+    text-align: center;
+}
+
+.banner {
+    width: 100%;
+    height: 75%;
+    padding-top: 100px;
+    /* z-index: 0; */
+    /* background-image: url(https://speakupcataguases.com/wp-content/uploads/2021/06/Speakup-topo-slide-03.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    /* padding: 10px; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.woman-pointing {
+
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    margin-right: 2%;
+}
+
+.banner h1,
+.banner p {
+    color: white;
+
+}
+
+.banner .banner-text h1 {
+    font-size: 3.75em;
+    font-weight: normal;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.banner .banner-text h5 {
+    color: var(--title-yellow);
+    margin: 0;
+}
+
+
+.banner-text p {
+
+    margin-bottom: 0;
+}
+
+.buttons {
+    display: flex;
+    align-self: flex-end;
+    position: absolute;
+    /* top: 80%;  */
+    margin-bottom: 20px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.buttons a {
+
+    text-decoration: none;
+    margin: 0 10px;
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.button-1 div,
+.button-2 div,
+.button-3 div {
+    display: flex;
+    width: 220px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+
+}
+
+.button-1 {
+    background-color: var(--methodology-button);
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+}
+
+.button-1 div p {
+    font-weight: bold;
+}
+
+.button-2 div p {
+    color: var(--methodology-button);
+    font-weight: bold;
+}
+
+.button-2 {
+    background-color: var(--title-yellow);
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+
+}
+
+.button-3 {
+    background-color: #FFFFFF;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+}
+
+.button-3 div p {
+    color: black;
+    font-weight: bold;
+}
+
+.links {
+    display: flex;
+}
+
+.nav-link {
+    list-style: none;
+    margin: 10px;
+}
+
+.about-us {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 10%;
+    gap: 5%;
+
+
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+
+.about-text h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.about-text p {
+    line-height: 2em;
+    margin-top: 0;
+}
+
+.about-text h4 {
+    color: var(--main-color);
+    margin-top: 0;
+}
+
+.about-img {
+    width: 50%;
+    height: auto;
+}
+
+.bold {
+    font-size: 3em;
+    font-weight: 1500;
+    color: #FFFFFF;
+}
+
+.methodology {
+    width: 100%;
+    height: 100vh;
+    padding: 0 10% 0 10%;
+    display: flex;
+    gap: 5%;
+}
+
+.methodology-text-icons {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.methodology-img {
+    width: 20%;
+    height: 100%;
+    background-color: #EDED3D;
+    padding: 1.5%;
+
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+
+}
+
+.icons-text {
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+}
+
+.icons-text img {
+    width: 55px;
+    height: 55px;
+}
+
+.icons-text p {
+    font-size: 1.3em;
+    line-height: normal;
+    color: black;
+    font-weight: 500;
+}
+
+hr {
+    width: 49%;
+    margin: 0 0.5%;
+    border-color: #49323236;
+
+}
+
+.students {
+    width: 100%;
+    padding: 0 10% 0 10%;
+    margin-top: 5%;
+
+}
+
+.students-container {
+    display: flex;
+
+    width: 100%;
+
+}
+
+.students-img-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+
+}
+
+.students-img-text img {
+    width: 200px;
+}
+
+.students-img-text p {
+    text-align: center;
+}
+
+.students-img-text h1 {
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+
+.english-lab {
+    width: 100%;
+    height: 100%;
+    padding: 0 10% 0 10%;
+    display: flex;
+    gap: 5%;
+    margin-top: 5%;
+}
+
+.english-lab-text {
+    width: 100%;
+    height: 100%;
+
+}
+
+.english-lab-text h4 {
+    color: #6565fc;
+
+}
+
+.english-lab-text h1 {
+    font-size: 2.2em;
+    font-weight: 1000;
+    margin: 0;
+}
+
+.english-lab-text ul {
+    width: 30%;
+    height: 15%;
+    background-color: #6565fc;
+    padding: 0;
+}
+
+.english-lab-text ul li {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.english-lab-img {
+    width: 540px;
+    height: 360px;
+}
+
+.aulas-exp {
+
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 1000px;
+    background-image: url(https://speakupcataguases.com/wp-content/uploads/2021/06/Speakup-imagem-formulario.jpg);
+    background-repeat: no-repeat;
+}
+
+.aulas-exp p {
+    width: 40%;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.aulas-exp h1 {
+    font-size: 2.81em;
+    color: #FFFFFF;
+}
+
+.destaque {
+    color: #EDED3D;
+}
+
+.asterisco {
+    color: red;
+}
+
+#form {
+    height: 40%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#form label {
+    color: #FFFFFF;
+    width: 100%;
+    font-weight: bold;
+}
+
+#form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 5%;
+    height: 40px;
+}
+
+.form-title p {
+    width: 100%;
+}
+
+#submit {
+    width: 40%;
+    height: 40px;
+    align-self: center;
+    background-color: #EDED3D;
+    color: #6565fc;
+    font-weight: bold;
+    font-size: 1em;
+    border: 1px solid #EDED3D;
+}
+
+.mvv {
+    width: 100%;
+    padding: 0% 10% 0% 10%;
+    display: flex;
+    gap: 5%;
+    justify-content: space-between;
+    align-items: first baseline;
+    margin: 5% 0;
+}
+
+.mvv-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mvv-text h2 {
+    margin-top: 0;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 3px solid #dfdffa;
+    background-color: #e6e6ff;
+    padding: 10px;
+
+
+}
+
+.footer-p2 h5 {
+    margin: 0;
+}
+
+.follow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.follow h5 {
+    margin: 0;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.social li {
+    list-style: none;
+}
+
+.social li a img {
+    width: 50px;
+    height: auto;
+}
+
+.footer-p1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.footer-p1 p {
+    margin: 0;
+    font-size: 0.8em;
+}
+
+.footer-p1 img {
+    margin-bottom: 20px;
+}
+
+.footer-p2 p {
+    margin-top: 0;
+    font-size: 0.8em;
+}
+
+@media screen and (min-width: 1920px) {
+    .aulas-exp {
+
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 1000px;
+        background-image: url(https://speakupcataguases.com/wp-content/uploads/2021/06/Speakup-imagem-formulario.jpg);
+        background-repeat: repeat;
+    }
+
+}
+
+@media screen and (max-width: 1120px) {
+
+    .button-1 div,
+    .button-2 div,
+    .button-3 div {
+        display: flex;
+        width: 170px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        gap: 20px;
+
+    }
+
+    html {
+        font-size: 14px;
+    }
+
+    .icon {
+        width: 30px;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    .icon {
+        width: 25px;
+        height: auto;
+    }
+
+    #header {
+        width: 100%;
+        height: 15%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        background-color: #FFFFFF;
+        opacity: 95%;
+        z-index: 1;
+
+
+    }
+
+    .students-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        /* Espaçamento entre as colunas */
+    }
+
+    .students-img-text p {
+        text-align: center;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+
+    .about-us {
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: center;
+        padding: 5% 10%;
+        gap: 5%;
+
+
+    }
+
+    .about-text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .about-img {
+
+        margin-top: 2%;
+        width: 40%;
+        height: auto;
+    }
+
+    .english-lab-img {
+        width: 300px;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+
+    #header {
+        width: 100%;
+        height: 12%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        background-color: #FFFFFF;
+        opacity: 95%;
+        z-index: 1;
+
+
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .button-1 div,
+    .button-2 div,
+    .button-3 div {
+        display: flex;
+        width: 120px;
+        height: 35px;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        gap: 20px;
+
+    }
+
+    .icon {
+        width: 25px;
+        height: auto;
+    }
+
+    .buttons p {
+        font-size: 0.75em;
+    }
+
+    .about-us {
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5% 10%;
+        gap: 5%;
+
+
+    }
+
+    .about-text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .about-img {
+
+        margin-top: 2%;
+        width: 40%;
+        height: auto;
+        display: none;
+    }
+
+    .english-lab-img {
+        display: none;
+    }
+
+    .aulas-exp {
+
+        margin-top: 5%;
+        padding-top: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 700px;
+        background-image: url(https://speakupcataguases.com/wp-content/uploads/2021/06/Speakup-imagem-formulario.jpg);
+        background-repeat: no-repeat;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    #header {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        background-color: #FFFFFF;
+        opacity: 95%;
+        z-index: 1;
+    }
+
+    #header-img {
+        width: 125px;
+        height: 26px;
+    }
+
+    .icons-text img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .icons-text p {
+        font-size: 1em;
+        line-height: normal;
+        color: black;
+        font-weight: 500;
+    }
+
+    .students-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .icons-text {
+        display: flex;
+        width: 50%;
+        justify-content: flex-start;
+        align-items: center;
+        /* gap: 5%; */
+    }
+
+    .mvv {
+        width: 100%;
+        padding: 0% 10% 0% 10%;
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+        justify-content: space-between;
+        align-items: first baseline;
+        margin: 5% 0;
+    }
+
+    .social li a img {
+        width: 30px;
+        height: auto;
+    }
+
+    footer{
+        font-size: 1em;
+    }
+
+}
